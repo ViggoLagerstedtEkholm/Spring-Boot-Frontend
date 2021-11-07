@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/microlabscasebackend/static/css/main.1d94453c.chunk.css",
+    "main.js": "/microlabscasebackend/static/js/main.c1e2c86e.chunk.js",
+    "main.js.map": "/microlabscasebackend/static/js/main.c1e2c86e.chunk.js.map",
+    "runtime-main.js": "/microlabscasebackend/static/js/runtime-main.68756e4f.js",
+    "runtime-main.js.map": "/microlabscasebackend/static/js/runtime-main.68756e4f.js.map",
+    "static/js/2.4be91822.chunk.js": "/microlabscasebackend/static/js/2.4be91822.chunk.js",
+    "static/js/2.4be91822.chunk.js.map": "/microlabscasebackend/static/js/2.4be91822.chunk.js.map",
+    "index.html": "/microlabscasebackend/index.html",
+    "static/css/main.1d94453c.chunk.css.map": "/microlabscasebackend/static/css/main.1d94453c.chunk.css.map",
+    "static/js/2.4be91822.chunk.js.LICENSE.txt": "/microlabscasebackend/static/js/2.4be91822.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68756e4f.js",
+    "static/js/2.4be91822.chunk.js",
+    "static/css/main.1d94453c.chunk.css",
+    "static/js/main.c1e2c86e.chunk.js"
+  ]
+}
