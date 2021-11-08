@@ -5,11 +5,11 @@ import Message from "../Alerts/Message";
 import {Loading} from "../Search/State/Loading";
 
 function Register({redirectLogin}) {
-    const [name, setName] = useState('Viggo');
-    const [username, setUsername] = useState('horken');
-    const [password, setPassword] = useState('123!AbcdDA');
-    const [email, setEmail] = useState('viggo.lagerstedtekholm@gmail.com');
-    const [passwordRepeat, setPasswordRepeat] = useState('123!AbcdDA');
+    const [name, setName] = useState();
+    const [username, setUsername] = useState();
+    const [password, setPassword] = useState();
+    const [email, setEmail] = useState();
+    const [passwordRepeat, setPasswordRepeat] = useState();
     const [isLoading, setIsLoading] = useState(false);
     const [message, setMessage] = useState();
     const navigate = useNavigate();

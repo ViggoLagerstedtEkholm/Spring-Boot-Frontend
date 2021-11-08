@@ -1,4 +1,5 @@
 import axios from "axios";
+import {API} from "../Constants/Constants";
 
 function getLocalAccessToken() {
     return JSON.parse(localStorage.getItem("accessToken"));
@@ -13,7 +14,7 @@ function refreshToken() {
 }
 
 const instance = axios.create({
-    baseURL: "http://localhost:8080/api",
+    baseURL: API,
     headers: {
         "Content-Type": "application/json",
     },
@@ -21,10 +22,7 @@ const instance = axios.create({
 
 instance.interceptors.request.use(
     (config) => {
-        console.log("What?" + getLocalAccessToken());
         if (getLocalAccessToken()) {
-            console.log("What?2");
-
             config.headers["Authorization"] = 'Bearer ' + getLocalAccessToken();
         }
         return config;

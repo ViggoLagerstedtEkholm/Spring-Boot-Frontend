@@ -32,7 +32,7 @@ function App() {
         }
     }, []);
   return (
-      <BrowserRouter>
+      <HashRouter>
           {isLoaded ?
               <UserContext.Provider value={value}>
                   <Navigation/>
@@ -47,7 +47,7 @@ function App() {
                   </Routes>
               </UserContext.Provider> : <Loading/>}
 
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 

@@ -1,5 +1,5 @@
 import FilterContent from "../Search/FilterContent";
-import {UserBox} from "../Display/UserBox";
+import {UserBox} from "./UserBox";
 import {FilterContext} from "../Context/FilterContext";
 import {useContext, useMemo, useState} from "react";
 import {UserContext} from "../Context/UserContext";

@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 
 function UserNavigation() {
+
     const onLogout = () =>{
         localStorage.clear();
         window.location.refresh();
@@ -18,7 +19,7 @@ function UserNavigation() {
                 <Link to="/add">Add new user</Link>
             </li>
             <li>
-                <a href="/" onClick={onLogout}>Logout</a>
+                <a href="/microlabscasebackend/" onClick={onLogout}>Logout</a>
             </li>
         </ul>
     );

@@ -1,6 +1,5 @@
-import {Link, useNavigate, useParams} from "react-router-dom";
+import {useNavigate, useParams} from "react-router-dom";
 import Message from "../Alerts/Message";
-import {Loading} from "../Search/State/Loading";
 import React, {useEffect, useState} from "react";
 import {PasswordReset, ValidatePassword} from "../Services/UserService";
 
@@ -20,16 +19,19 @@ export const ResetPassword = () => {
 
     const ResetPassword = (e) =>{
         e.preventDefault();
+        if(newPass === newPassRepeat){
+            const resetPassword = new FormData();
+            resetPassword.append("token", TOKEN);
+            resetPassword.append("password", newPass);
 
-        const resetPassword = new FormData();
-        resetPassword.append("token", TOKEN);
-        resetPassword.append("password", newPass);
-
-        PasswordReset(resetPassword).then(() =>{
-            navigate('/login');
-        }).catch(() =>{
-            setMessage('Could not update password.');
-        });
+            PasswordReset(resetPassword).then(() =>{
+                navigate('/login');
+            }).catch(() =>{
+                setMessage('Could not update password.');
+            });
+        }else{
+            alert('Password does not match.');
+        }
     }
 
     return (
